@@ -1,0 +1,95 @@
+.prop-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*.outer-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.outer-container::after {
+    clear: both;
+    content: "";
+    display: block;
+}*/
+.listing-card-outer:hover{
+    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0);
+}
+.listing-card-img {
+    height: 300px;
+    position: relative;
+    background-image: url("../../assets/images/default-crib.png");
+    background-size: cover;
+    background-position: center;
+}
+.listing-card-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.listing-card-img .listing-card-pricing {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.8));
+    background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.8));
+    width: 100%;
+    padding: 20px 15px;
+    font-weight: 100;
+    font-size: 20px;
+}
+.listing-card-pricing i{
+    color: orange;
+}
+
+.listing-card-details {
+    position: relative;
+    padding: 15px;
+    line-height: 1.5;
+}
+
+.listing-card-details .listing-card-name {
+    color: #222;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.listing-card-details .listing-view-details {
+    text-align: right;
+}
+
+.listing-card-details .listing-view-details a {
+    color: #f15e2b;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.listing-card-actions {
+    position: relative;
+    height: 51px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(204, 204, 204, 0.25);
+}
+
+.listing-card-actions .card-contact-action {
+    float: left;
+    width: 50%;
+    background-color: white;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    text-decoration: none;
+    color: #f15e2b;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.listing-card-actions .card-contact-action:hover {
+    background-color: rgba(242, 242, 242, 0.25);
+}
+
+.listing-card-actions .card-contact-action:nth-child(1) {
+    border-right: 1px solid #ccc;
+}

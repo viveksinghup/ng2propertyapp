@@ -1,0 +1,19 @@
+
+.card-box-container {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.card-holder{
+    background: #fff;
+    box-shadow: 0 0px 15px 2px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: calc( 100% / 3 - 20px );
+    position: relative;
+    margin: 10px 10px;
+    max-height: 530px;
+    transition: 0.3s;
+}
+.card-holder:hover{
+    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0);
+}

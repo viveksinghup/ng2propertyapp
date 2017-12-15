@@ -1,0 +1,49 @@
+<div class="form-wrapper">
+  <form #newProperty= "ngForm" (ngSubmit)="onPropertySubmit(newProperty.value)">
+    <div class="basic-desc">
+      <fieldset>
+        <input id="name" type="text" name="name" required ngModel minlength="5" maxlength="15">
+        <label for="name">Property Name</label>
+        <div class="after"></div>
+        <small class="help-block" *ngIf="newProperty.name.valid">Name is too short</small>
+      </fieldset>
+      <fieldset>
+        <input id="price" type="number" name="price" required ngModel>
+        <label for="price">Price</label>
+        <div class="after"></div>
+      </fieldset>
+      <fieldset>
+        <input id="address" type="text" name="address" required ngModel>
+        <label for="address">Address</label>
+        <div class="after"></div>
+      </fieldset>
+    </div>
+    <div class="basic-desc">
+      <fieldset>
+        <input id="type" type="text" name="type" required ngModel>
+        <label for="type">Property Type</label>
+        <div class="after"></div>
+      </fieldset>
+      <fieldset>
+        <input id="bedrooms" type="number" name="bedrooms" required ngModel>
+        <label for="bedrooms">Bedroom</label>
+        <div class="after"></div>
+      </fieldset>
+      <fieldset>
+        <input id="description" type="text" name="description" required ngModel>
+        <label for="description">Description</label>
+        <div class="after"></div>
+      </fieldset>
+    </div>
+    <div class="basic-desc">
+      <fieldset>
+        <input id="bathrooms" type="number" name="bathrooms" required ngModel>
+        <label for="bathrooms">Bathroom</label>
+        <div class="after"></div>
+      </fieldset>
+      <fieldset>
+        <button type="submit">Add Property</button>
+      </fieldset>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,43 @@
+<div class="outer-container">
+    <div class="listing-card-outer">
+        <div class="listing-card-img">        
+            <img src="../../assets/images/{{crib.image}}" alt="">
+            <div class="listing-card-pricing">
+                <i>Rs.</i> {{ crib.price | currency:'INR':true }}
+            </div>
+        </div>
+        <div class="listing-card-details">
+            <div class="listing-card-name">
+                {{ crib.name }}
+            </div>
+            <div class="listing-card-street">
+                {{ crib. address }}
+            </div>
+            <div class="listing-card-city">
+                {{ crib.description }}
+            </div>
+            <div class="listing-beds-baths">
+                Appartment Type: {{ crib.type }}
+            </div>
+            <div class="listing-view-details">
+                <a (click)="crib.showDetails = !crib.showDetails">View Details</a>
+            </div>
+        </div>
+        <div class="listing-card-actions" *ngIf="!crib.showDetails">
+            <a class="card-contact-action">
+                <p>Contact</p>
+            </a>
+            <a class="card-contact-action">
+                <p>Share</p>
+            </a>
+        </div>
+        <div class="listing-card-actions" *ngIf="crib.showDetails">
+            <a class="card-contact-action">
+                <p>Bedrooms: {{ crib.bedrooms }} </p>
+            </a>
+            <a class="card-contact-action">
+                <p>Bathrooms: {{ crib.bathrooms }} </p>
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  color: #9C9EA1;
+  background-color: #f6f6f6;
+  font-family: "Ubuntu", "Helvetica", "Arial", san-serif;
+}  
